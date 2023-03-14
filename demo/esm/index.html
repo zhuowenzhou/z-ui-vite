@@ -1,11 +1,12 @@
 <h1>Demo</h1>
 <div id="app"></div>
 <script type="module">
-    import { createApp } from "vue/dist/vue.esm-bundler.js";
-    import SmartyUI from "../../dist/smarty-ui.mjs";
-    createApp({
-        template: `
-      <SButton/>
+  import { createApp } from "vue/dist/vue.esm-bundler.js";
+  import SmartyUI from "../../dist/smarty-ui.mjs";
+  import '../../dist/assets/entry.css'
+  createApp({
+    template: `
+      <SButton color="blue" round plain icon="search">搜索按钮</SButton>
       <JSXButton/>
       <SFCButton/>
     `}).use(SmartyUI).mount('#app')

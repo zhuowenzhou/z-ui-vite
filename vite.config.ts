@@ -11,6 +11,8 @@ const rollupOptions = {
         globals: {
             vue: "Vue",
         },
+        assetFileNames: `assets/[name].css`,
+
     },
 };
 
