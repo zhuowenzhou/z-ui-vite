@@ -5,9 +5,8 @@
         "jsx": "preserve",
     },
     "include": [
-        "./**/*.*",
-        "./**/*.tsx",
-        "./shims-vue.d.ts",
+        "./src/**/*.*",
+        "./src/shims-vue.d.ts",
     ],
     "exclude": [
         "node_modules"
