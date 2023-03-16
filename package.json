@@ -12,7 +12,8 @@
     "test": "vitest",
     "lint": "eslint --fix --ext .ts,.vue,.tsx src",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test:run": "vitest run"
   },
   "keywords": [],
   "author": "zhuowenzhou <zhuowenzhou@aliyun.com> (http://github.com/zhuowenzhou)",
