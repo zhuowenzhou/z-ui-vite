@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import Unocss from "./config/unocss";
-
+import { UserConfig } from "vitest";
 // https://vitejs.dev/config/
 const rollupOptions = {
     external: ["vue", "vue-router"],
@@ -11,11 +11,11 @@ const rollupOptions = {
         globals: {
             vue: "Vue",
         },
-        assetFileNames: `assets/[name].css`,
+        assetFileNames: `style.css`,
     },
 };
 
-export default defineConfig({
+export const config = {
     plugins: [
         vue(),
         vueJsx({}),
@@ -36,6 +36,7 @@ export default defineConfig({
             // 导出模块格式
             formats: ["esm", "umd", "iife"],
         },
+        outDir: "./dist",
     },
     test: {
         // enable jest-like global test APIs
@@ -48,4 +49,5 @@ export default defineConfig({
             web: [/.[tj]sx$/],
         },
     },
-});
+}
+export default defineConfig(config as UserConfig);
