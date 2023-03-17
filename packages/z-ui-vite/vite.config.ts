@@ -31,8 +31,8 @@ export default defineConfig({
         cssCodeSplit: true,
         lib: {
             entry: "./src/entry.ts",
-            name: "SmartyUI",
-            fileName: "smarty-ui",
+            name: "ZUI",
+            fileName: "z-ui",
             // 导出模块格式
             formats: ["esm", "umd", "iife"],
         },
