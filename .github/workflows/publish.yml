@@ -29,3 +29,4 @@ jobs:
         with:
           default_branch: "publish"
           dir: "."
+          npm_args: "--unsafe-perm --allow-same-version"
